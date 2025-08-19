@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form action="">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </label>
+           
+                <label for="email">Email:
+                <input type="email" id="email" name="email" required>
+           </label>
+            
+                <label for="password">Password:
+                <input type="password" id="password" name="password" required>
+                </label>
+            
+                <label for="dob">Date of Birth
+                <input type="date" id="dob" name="dob" required>
+                </label>
+        
+                <label for="phone">Phone Number
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                </label>
+          
+            
+                <label for="gender">Gender
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                </label>
+            
+                <label for="favcolor">Favorite Color
+                <input type="color" id="fav-color" name="fav-color"></label>
+            </label>
+            <label for="comments">Comments
+                <textarea name="comments" id="comments" rows="3"></textarea>
+                <input type="checkbox" required> I agree to the terms and conditions
+            </label>
+            
+
+    
+         <button type="submit">Register</button>
+         </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using DOM</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="username" placeholder="Enter Username" >
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter Password" >
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    function validateForm(){
+        let name = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        if(name === "" || email === "" || password === ""){
+            alert("All fields are required");
+            return false;
+        }
+        alert("Form submitted successfully");
+        return true;
+    }
+</script>
+</html>
